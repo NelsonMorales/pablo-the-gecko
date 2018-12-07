@@ -52,7 +52,7 @@ layout: default
         <li>
           <p class="lead">
             <i class="glyphicon glyphicon-chevron-right"></i>
-            Curious to know more? 
+            Curious to know more?
             <br/>
             <a class="btn btn-xl btn-outline-light" href="https://www.livescience.com/57985-tardigrade-facts.html" target="_new">More Info</a>
           </p>
@@ -68,6 +68,6 @@ layout: default
     <div class="embed-responsive embed-responsive-16by9">
       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IxndOd3kmSs" allowfullscreen></iframe>
     </div>
-    </div>
+  </div>
 </section>
 
