@@ -1,0 +1,10 @@
+title: tardigrade
+email: team-a@scrum-training.com
+description: >-
+  This site tell you about the tardigrade
+baseurl: ""
+url: ""
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
