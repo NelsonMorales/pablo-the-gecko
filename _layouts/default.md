@@ -54,20 +54,19 @@ Contact: http://www.bootshape.com/contact.php
         </div>
         <nav role="navigation" class="collapse navbar-collapse navbar-right">
           <ul class="navbar-nav nav">
+
+        {% assign links = site.data.navigation %}
+        {% for link in links %}
+            {% assign class = nil %}
+            {% if page.url contains link.url %}
+                {% assign class = 'active' %}
+            {% endif %}
+
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
             </li>
-            <!-- <li class="dropdown">
-              <a data-toggle="dropdown" href="#" class="dropdown-toggle">Menu <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="anatomy_and_biology.html">Anatomy & Biology</a></li>
-                <li><a href="/behavior.html">Behavior</a></li>
-                <li><a href="/mating_reproduction.html">Mating & reproduction</a></li>
-                <li><a href="/animal_habitat.html">Animal Habitat</a></li>
-                <li><a href="/diet_information.html">Diet Information</a></li>
-                <li><a href="/scientific_name.html">Scientific name</a></li>
-              </ul>
-            </li> -->
+        {% endfor %}
+
           </ul>
         </nav>
       </div>
